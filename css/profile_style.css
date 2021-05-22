@@ -2,6 +2,7 @@
   width: 100%;
   height: 100%;
   display: flex;
+  color:#24292e;
   flex-direction: row;
   margin-top: 5%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -39,7 +40,7 @@ p {
 }
 
 .profile__names,
-.profile__description {
+.profile__description,.profile__followInfo {
   width: 100%;
   margin-left: 40%;
   word-break: break-all;
@@ -61,6 +62,51 @@ h2 {
   font-weight: 300;
   line-height: 24px;
 }
+
+.profile__followInfo {
+    display: flex; 
+    flex-direction: row;
+    font-size:14px; 
+}
+.following__value,.followers__value{
+   font-weight: bolder;
+}
+.follow__label{
+    color:#586069;
+}
+.follow__icon__container{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width:5%;
+    height:80%;
+    object-fit: contain;
+}
+.follow__icon{
+    width:100%;
+    
+}
+
+.follow__icon img,span{
+    padding-left: 0.8%;
+    padding-right: 0.8%;
+}
+
+.circle__icon__container{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 2%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.circle__icon{
+    width:2px;
+}
+
 
 /* Styling for reposiory container */
 
