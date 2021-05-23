@@ -11,86 +11,118 @@
   </head>
   <body>
     <div class="general__container">
-      <div class="profile__details">
-        <div class="image__container">
-          <img
-            src="https://avatars.githubusercontent.com/u/44054995?u=5e37cb778d9c4d7c2939c95c1ff7a08945e7b00c&v=4"
-            class="profile__picture"
-            alt="avatar"
-          />
-        </div>
-
-        <div class="profile__names">
-          <h1>Enokela Christopher</h1>
-          <h2>Archlight001</h2>
-        </div>
-
-        <div class="profile__description">
-          <p>Live and Code forerver</p>
-        </div>
-
-        <div class="profile__followInfo">
-          <div class="follow__icon__container">
-            <img src="icons/users.png" class="follow__icon" alt="follow icon" />
+      <div class="navbar">
+        <div class="left__navbar">
+          <div class="github__logo">
+            <img src="icons/github__logo.png" alt="github logo">
           </div>
-          <span class="followers__value">7</span>
-          <span class="follow__label">Followers</span>
-          <div class="circle__icon__container">
+          <div >
+            <form class="form__search" action="" method="get">
+              <input type="text" onclick="changeColor()" class="input__search" placeholder="Search...">
+              <button type="submit" class="input__submit">
+                <img id="search__icon" src="icons/Search.png" alt="search icon">
+              </button>
+            </form>
+          </div>         
+        </div>
+
+        <div class="right__navbar">
+          <div class="small__user__icon">
             <img
-              src="icons/Circle.png"
-              class="circle__icon"
-              alt="circle icon"
+              src="https://avatars.githubusercontent.com/u/44054995?u=5e37cb778d9c4d7c2939c95c1ff7a08945e7b00c&v=4"
+              alt="avatar"
             />
           </div>
-          <span class="following__value">70</span>
-          <span class="follow__label">Following</span>
         </div>
-
-        <div class="other__info">
-          <div class="info">
-            <div>
-              <img src="icons/location.png" alt="location icon" />
-            </div>
-            <span>Nigeria</span>
-          </div>
-          <div class="info">
-            <div>
-              <img src="icons/mail.png" alt="mail icon" />
-            </div>
-            <span
-              ><a href="mailto:archlight001@gmail.com"
-                >archlight001@gmail.com</a
-              ></span
-            >
-          </div>
-          <div class="info">
-            <div>
-              <img src="icons/bird.png" alt="bird icon" />
-            </div>
-            <span><a href="https://twitter.com/light_code">light_code</a></span>
-          </div>
-        </div>
+        
       </div>
 
-      <div class="repositories">
-        <p>Popular repositories</p>
-        <div class="repository__group">
-          <div class="repository">
-            <a href="">Project Title</a>
-            <p>Project Description</p>
 
-            <div class="repository__languages">
-              <div class="language__container">
-                <div class="language">
-                  <div class="language__color"></div>
-                  <span class="language__name">Javascript</span>
-                </div>
+      <!-- Profile Section -->
+      <div class="profile__container">
+        <div class="profile__details">
+          <div class="image__container">
+            <img
+              src="https://avatars.githubusercontent.com/u/44054995?u=5e37cb778d9c4d7c2939c95c1ff7a08945e7b00c&v=4"
+              class="profile__picture"
+              alt="avatar"
+            />
+          </div>
+  
+          <div class="profile__names">
+            <h1>Enokela Christopher</h1>
+            <h2>Archlight001</h2>
+          </div>
+  
+          <div class="profile__description">
+            <p>Live and Code forerver</p>
+          </div>
+  
+          <div class="profile__followInfo">
+            <div class="follow__icon__container">
+              <img src="icons/users.png" class="follow__icon" alt="follow icon" />
+            </div>
+            <span class="followers__value">7</span>
+            <span class="follow__label">Followers</span>
+            <div class="circle__icon__container">
+              <img
+                src="icons/Circle.png"
+                class="circle__icon"
+                alt="circle icon"
+              />
+            </div>
+            <span class="following__value">70</span>
+            <span class="follow__label">Following</span>
+          </div>
+  
+          <div class="other__info">
+            <div class="info">
+              <div>
+                <img src="icons/location.png" alt="location icon" />
               </div>
-              
+              <span>Nigeria</span>
+            </div>
+            <div class="info">
+              <div>
+                <img src="icons/mail.png" alt="mail icon" />
+              </div>
+              <span
+                ><a href="mailto:archlight001@gmail.com"
+                  >archlight001@gmail.com</a
+                ></span
+              >
+            </div>
+            <div class="info">
+              <div>
+                <img src="icons/bird.png" alt="bird icon" />
+              </div>
+              <span><a href="https://twitter.com/light_code">light_code</a></span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="repositories">
+          <p>Popular repositories</p>
+          <div class="repository__group">
+            <div class="repository">
+              <a href="">Project Title</a>
+              <p>Project Description</p>
+  
+              <div class="repository__languages">
+                <div class="language__container">
+                  <div class="language">
+                    <div class="language__color"></div>
+                    <span class="language__name">Javascript</span>
+                  </div>
+                </div>
+                
+              </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
+    <script src="/javascript/style.js"></script>
   </body>
 </html>
