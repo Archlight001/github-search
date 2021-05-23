@@ -11,28 +11,47 @@
   </head>
   <body>
     <div class="general__container">
+
+      <!-- Navbar section -->
       <div class="navbar">
         <div class="left__navbar">
           <div class="github__logo">
-            <img src="icons/github__logo.png" alt="github logo">
+            <a href="index.html"><img src="icons/github__logo.png" alt="github logo"></a>
           </div>
-          <div >
+          <div>
             <form class="form__search" action="" method="get">
               <input type="text" onclick="changeColor()" class="input__search" placeholder="Search...">
               <button type="submit" class="input__submit">
                 <img id="search__icon" src="icons/Search.png" alt="search icon">
               </button>
             </form>
+          </div>
+          <div class="nav__links">
+            <a href="https://github.com/pulls" target="_blank">Pull requests</a>
+            <a href="https://github.com/issues" target="_blank">Issues</a>
+            <a href="https://github.com/marketplace" target="_blank">Marketplace</a>
+            <a href="https://github.com/explore" target="_blank">Explore</a>
           </div>         
         </div>
 
         <div class="right__navbar">
-          <div class="small__user__icon">
+
+          <div class="navbar__icon">
+            <img src="icons/bell_icon_small.png" alt="bell icon">
+          </div>
+
+          <div class="navbar__icon">
+            <img src="icons/plus_icon.png" alt="plus icon">
+          </div>
+
+          <div class="navbar__icon">
             <img
               src="https://avatars.githubusercontent.com/u/44054995?u=5e37cb778d9c4d7c2939c95c1ff7a08945e7b00c&v=4"
               alt="avatar"
             />
           </div>
+
+          
         </div>
         
       </div>

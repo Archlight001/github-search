@@ -7,6 +7,7 @@ body{
   height: 100%;
   display: flex;
   flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar {
@@ -27,6 +28,7 @@ body{
 
 .right__navbar{  
   justify-content:flex-end;
+  margin-right: 3rem;
 }
 
 .github__logo{
@@ -90,15 +92,35 @@ body{
   height:100%;
 }
 
-
-.small__user__icon{
-  height:25px;
-  width:25px;
-  object-fit: contain;
-  margin-right: 5rem;
+.nav__links{
+  display: flex;
+  margin-left: 25px;
+  width:50%;
+  justify-content:space-between;
+  align-items:center;
 }
 
-.small__user__icon img{
+.nav__links a{
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  white-space: wrap;
+}
+
+.nav__links a:hover{
+  color: #586069;
+}
+
+
+.navbar__icon{
+  height:18px;
+  width:18px;
+  object-fit: contain;
+  margin-right: 1rem;
+}
+
+.navbar__icon img{
   height:100%;
   width:100%;
   border-radius: 50%;
@@ -117,7 +139,7 @@ body{
   color: #24292e;
   flex-direction: row;
   margin-top: 5%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+ 
 }
 
 /* Styling for profile details */
@@ -255,7 +277,6 @@ span {
 
 .repositories {
   flex-basis: 70%;
-  /* background-color: yellow; */
   margin-top: 3%;
   padding: 1%;
   height: 200px;
@@ -270,7 +291,6 @@ span {
 .repository {
   width: 40%;
   max-width: 40%;
-  /* background-color:red; */
   height: 6rem;
   border-radius: 3.5%;
   border-style: solid;
