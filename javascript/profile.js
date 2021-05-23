@@ -55,6 +55,6 @@ const query = `query getDetails($username:String!) {
   }
 `;
 
-fetchData(query, { username: github_data["username"] }).then((data) =>
-  console.log(data)
-);
+// fetchData(query, { username: github_data["username"] }).then((data) =>
+//   console.log(data)
+// );
