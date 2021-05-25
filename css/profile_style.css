@@ -71,8 +71,8 @@ body{
   width:50%;
   transition:width 0.5s ease;
 }
-
 .input__search:focus{ 
+
   width:100%;
   height:25px;
   border-style: solid;
@@ -111,8 +111,6 @@ body{
   color: #fff;
   font-size: 14px;
   white-space: wrap;
-  margin-left: 2px;
-  margin-right: 2px;
 }
 
 .nav__links a:hover{
