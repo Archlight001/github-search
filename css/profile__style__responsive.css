@@ -1,0 +1,71 @@
+/* Reponsive design section */
+
+@media only  screen and (max-width:1150px) {
+    .github__logo{
+        width:8%;
+      }
+
+      .form__search{
+        margin-top:0.4rem;
+        margin-left: 2%;
+      }
+      
+      .nav__links{
+        width:65%;
+      }
+
+      .status{
+        margin-top:16%;
+        margin-left: 19%;
+      }
+      
+}
+
+/* Styling to align status icon beginning */
+
+@media only  screen and (max-width:1110px) {
+    .status{
+        margin-top:16%;
+        margin-left: 21%;
+      }
+}
+
+@media only  screen and (max-width:1060px) {
+    .status{
+        margin-top:16%;
+        margin-left: 22%;
+      }
+}
+
+@media only  screen and (max-width:1000px) {
+    .status{
+        margin-top:16%;
+        margin-left: 24.3%;
+      }
+}
+
+@media only  screen and (max-width:940px) {
+    .status{
+        margin-top:19%;
+        margin-left: 25%;
+      }
+}
+
+@media only  screen and (max-width:870px) {
+    .status{
+        margin-top:21%;
+        margin-left: 27%;
+      }
+}
+
+/* Styling to align status icon end */
+
+
+
+@media only  screen and (max-width:992px) {
+  
+}
+
+@media only  screen and (max-width:780px) {
+  
+}

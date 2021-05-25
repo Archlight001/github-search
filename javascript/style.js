@@ -18,3 +18,9 @@ function showSpan(status){
         statusInfo.style.display = "none"
     }
 }
+
+
+var pullRequestLink = document.getElementsByClassName("pull__requests")[0];
+ if(window.screen.width <= "1150" && window.screen.width > "780" ){
+    pullRequestLink.innerHTML ="Pulls"
+ }
