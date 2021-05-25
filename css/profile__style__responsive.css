@@ -50,6 +50,31 @@
     width: 100%;
   }
 
+  #main__profile__names{
+      display: none;
+  }
+
+  #mini__profile__names{
+    display: block;
+  }
+
+  .image__profile{
+      display: flex;
+      width: 100%;
+      flex-direction:row;
+      justify-content: flex-start;
+      align-items: center;
+  }
+
+  .image__profile .image__container{
+      flex-basis: 20%;
+  }
+
+  .image__profile .profile__names{
+      margin-left: 3%;
+      flex-basis:80%;
+  }
+
   .image__status {
     display: flex;
     flex-direction: column;
@@ -58,7 +83,6 @@
   .status {
     position: relative;
     width: 100%;
-    height: 40px;
     border-radius: 3.5%;
     border-style: solid;
     border-width: thin;
@@ -77,8 +101,8 @@
   }
 
   .status:hover {
-    width: 120px;
-    border-radius: 5%;
+    width: 100%;
+    border-radius: 3.5%;
     cursor: pointer;
   }
 
@@ -116,6 +140,42 @@
   .other__info {
     width: 100%;
     margin-left: 1%;
+  }
+
+  .follow__icon__container {
+    width: 2%;
+    height: 100%;
+  }
+
+  .following__value,
+.followers__value,.follow__label{
+  margin-top: 0.5px;
+}
+
+.circle__icon__container{
+    height:100%;
+} 
+.circle__icon__container img{
+    margin-top:6.5px
+}
+
+.info div {
+    width: 2%;
+  }
+
+
+  /* Styling for reposiory container */
+
+  .repository__group {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .repository{
+    width: 80%;
+    max-width: 80%;
   }
 }
 

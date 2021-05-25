@@ -157,6 +157,9 @@ body{
   flex-basis: 30%;
 }
 
+#mini__profile__names{
+  display: none;
+}
 .profile__details h1,
 h2,
 p {
