@@ -158,6 +158,43 @@ p {
   width: 70%;
 }
 
+.image__status{
+  display: flex;
+}
+
+.status{
+  position:absolute;
+  width: 40px;
+  height:40px;
+  border-radius: 50%;
+  background-color:white;
+  margin-top:14%;
+  margin-left: 17%;
+  transition:width 0.5s ease;
+}
+
+.status__info{
+  font-size:12px;
+  color:#2188ff;
+  margin-left:5px;
+  display:none;
+}
+
+.status:hover{
+   width:120px;
+  border-radius:5%;
+  cursor: pointer;
+}
+
+.status div{
+  display: flex;
+  width:100%;
+  height:100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .image__container {
   display: flex;
   justify-content: center;
