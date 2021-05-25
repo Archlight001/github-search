@@ -41,6 +41,99 @@
 }
 
 @media only screen and (max-width: 760px) {
+  /* Styling for navbar section */
+
+  .navbar__mini {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    height: 550px;
+    background-color: #24292e;
+    padding: 16px;
+  }
+
+  .nav__mini__header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__mini__body{
+      display: flex;
+      flex-direction:column;
+      margin-top: 3%;
+      width:90%;
+  }
+
+  .hamburger__icon {
+    width: 100%;
+  }
+
+  .hamburger__icon div {
+    width: 20px;
+    height: 3px;
+    margin-top: 3px;
+    background-color: rgb(201, 199, 199);
+  }
+
+  .github__logo__mini {
+    width: 100%;
+  }
+
+  .github__logo__mini img {
+    margin-left: 50%;
+    width: 15%;
+  }
+
+  .bell__icon__mini {
+    width: 100%;
+  }
+
+  .bell__icon__mini img {
+    margin-left: 90%;
+  }
+
+  .form__search{
+      margin-bottom: 2%;
+  }
+  .nav__links__mini{
+    width:100%;
+    height:30px;
+    margin-left:1.5%;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items:center;
+    border-style: solid;
+    border-width: thin;
+    border-color: #586069;
+    border-left-style: hidden;
+    border-right-style: hidden;
+  }
+
+  .child{
+      border-top-style: hidden;
+  }
+
+  .nav__links__mini a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    font-size: 14px;
+    white-space: wrap;
+    width:100%;
+    height: 100%;
+  }
+  
+  .nav__links__mini a:hover{
+    color: #586069;
+  }
+
+  /* Styling for Profile section  */
   .profile__container {
     flex-direction: column;
     margin-top: 0.5%;
@@ -50,29 +143,29 @@
     width: 100%;
   }
 
-  #main__profile__names{
-      display: none;
+  #main__profile__names {
+    display: none;
   }
 
-  #mini__profile__names{
+  #mini__profile__names {
     display: block;
   }
 
-  .image__profile{
-      display: flex;
-      width: 100%;
-      flex-direction:row;
-      justify-content: flex-start;
-      align-items: center;
+  .image__profile {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
   }
 
-  .image__profile .image__container{
-      flex-basis: 20%;
+  .image__profile .image__container {
+    flex-basis: 20%;
   }
 
-  .image__profile .profile__names{
-      margin-left: 3%;
-      flex-basis:80%;
+  .image__profile .profile__names {
+    margin-left: 3%;
+    flex-basis: 80%;
   }
 
   .image__status {
@@ -148,21 +241,21 @@
   }
 
   .following__value,
-.followers__value,.follow__label{
-  margin-top: 0.5px;
-}
-
-.circle__icon__container{
-    height:100%;
-} 
-.circle__icon__container img{
-    margin-top:6.5px
-}
-
-.info div {
-    width: 2%;
+  .followers__value,
+  .follow__label {
+    margin-top: 0.5px;
   }
 
+  .circle__icon__container {
+    height: 100%;
+  }
+  .circle__icon__container img {
+    margin-top: 6.5px;
+  }
+
+  .info div {
+    width: 2%;
+  }
 
   /* Styling for reposiory container */
 
@@ -173,7 +266,7 @@
     flex-wrap: wrap;
   }
 
-  .repository{
+  .repository {
     width: 80%;
     max-width: 80%;
   }
