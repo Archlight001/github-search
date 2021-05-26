@@ -22,6 +22,10 @@ body{
   align-items:center;
 }
 
+.navbar__mini{
+  display:none;
+}
+
 .right__navbar,.left__navbar{
   width: 50%;
   display: flex;
