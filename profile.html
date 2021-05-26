@@ -10,7 +10,7 @@
     <title>Profile</title>
     <script src="/javascript/profile.js"></script>
   </head>
-  <body>
+  <body class="body">
     <div class="general__container">
       <!-- Navbar section -->
       <div class="navbar">
@@ -21,10 +21,13 @@
             /></a>
           </div>
           <div>
-            <form class="form__search" action="" method="get">
+            <form class="form__search" action="profile.html" method="get">
               <input
                 type="text"
-                onclick="changeColor()"
+                onfocusin="changeColor(true)"
+                onfocusout = "changeColor(false)"
+                name="username" 
+                id="username"
                 class="input__search"
                 placeholder="Search..."
               />
@@ -63,7 +66,8 @@
 
           <div class="navbar__icon">
             <img
-              src="https://avatars.githubusercontent.com/u/44054995?u=5e37cb778d9c4d7c2939c95c1ff7a08945e7b00c&v=4"
+              class="js_navbar__avatar__image"
+              src=""
               alt="avatar"
             />
           </div>
@@ -92,10 +96,13 @@
 
         <div class="nav__mini__body">
           <div>
-            <form class="form__search" action="" method="get">
+            <form class="form__search" action="profile.html" method="get">
               <input
                 type="text"
-                onclick="changeColor()"
+                onfocusin="changeColor(true)"
+                onfocusout = "changeColor(false)"
+                name="username" 
+                id="username"
                 class="input__search"
                 placeholder="Search..."
               />
@@ -159,13 +166,15 @@
           </div>
           <div class="nav__links__mini child">
             <img
-              src="https://avatars.githubusercontent.com/u/44054995?u=5e37cb778d9c4d7c2939c95c1ff7a08945e7b00c&v=4"
-              alt="avatar"
+            class="js_navbar__avatar__image"
+            src=""  
+            alt="avatar"
             />
             <a
+            class="js_username"
               href="https://github.com/Archlight001"
               target="_blank"
-              >Archlight001</a
+              ></a
             >
           </div>
         </div>
@@ -180,42 +189,50 @@
             <div class="image__profile">
               <div class="image__container">
                 <img
-                  src="https://avatars.githubusercontent.com/u/44054995?u=5e37cb778d9c4d7c2939c95c1ff7a08945e7b00c&v=4"
-                  class="profile__picture"
+                  src=""
+                  class="profile__picture js_navbar__avatar__image"
                   alt="avatar"
                 />
               </div>
 
               <div id="mini__profile__names" class="profile__names">
-                <h1>Enokela Christopher</h1>
-                <h2>Archlight001</h2>
+                <h1 class="js_fullname"></h1>
+                <h2 class="js_username"></h2>
               </div>
             </div>
 
             <div
               onmouseover="showSpan(true)"
               onmouseout="showSpan(false)"
-              class="status"
+              class="status js_status "
             >
-              <div>
-                <g-emoji
-                  class="g-emoji"
-                  alias="dart"
-                  fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png"
-                  >🎯</g-emoji
-                >
-                <span class="status__info">Focusing</span>
+            <div class="inner__status">
+
+              <div class="status__emoji">
+                <!-- <div>
+                  <g-emoji
+                    class="g-emoji"
+                    alias="dart"
+                    fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png"
+                    >🎯</g-emoji
+                  >
+                  
+                </div> -->
               </div>
+              
+              <span class="status__info"></span>
+            </div>
+              
             </div>
           </div>
 
           <div id="main__profile__names" class="profile__names">
-            <h1>Enokela Christopher</h1>
-            <h2>Archlight001</h2>
+            <h1 class="js_fullname"></h1>
+            <h2 class="js_username"></h2>
           </div>
 
           <div class="profile__description">
-            <p>Live and Code forerver</p>
+            <p class="js_description"></p>
           </div>
 
           <div class="profile__followInfo">
@@ -226,7 +243,7 @@
                 alt="follow icon"
               />
             </div>
-            <span class="followers__value">7</span>
+            <span class="followers__value js_followers"></span>
             <span class="follow__label">Followers</span>
             <div class="circle__icon__container">
               <img
@@ -235,7 +252,7 @@
                 alt="circle icon"
               />
             </div>
-            <span class="following__value">70</span>
+            <span class="following__value js_following"></span>
             <span class="follow__label">Following</span>
           </div>
 
@@ -244,15 +261,15 @@
               <div>
                 <img src="icons/location.png" alt="location icon" />
               </div>
-              <span>Nigeria</span>
+              <span class="js_location"></span>
             </div>
             <div class="info">
               <div>
                 <img src="icons/mail.png" alt="mail icon" />
               </div>
               <span
-                ><a href="mailto:archlight001@gmail.com"
-                  >archlight001@gmail.com</a
+                ><a
+                  class = "js_mail"></a
                 ></span
               >
             </div>
@@ -261,7 +278,7 @@
                 <img src="icons/bird.png" alt="bird icon" />
               </div>
               <span
-                ><a href="https://twitter.com/light_code">light_code</a></span
+                ><a class="js_twitterusername"></a></span
               >
             </div>
           </div>

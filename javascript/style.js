@@ -3,10 +3,15 @@ var inputSearch = getComputedStyle(
 );
 
 var input__submit = document.getElementsByClassName("input__submit");
-function changeColor() {
-  if (inputSearch.width > "100px") {
-    input__submit[0].style.display = "none";
+function changeColor(change) {
+  if(change){
+    if (inputSearch.width > "100px") {
+      input__submit[0].style.display = "none";
+    }
+  }else{
+    input__submit[0].style.display = "block";
   }
+  
 }
 
 var statusWidth = getComputedStyle(

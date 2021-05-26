@@ -1,5 +1,6 @@
 body{
   margin: 0px;
+  display: none;
 }
 
 .general__container {
@@ -198,7 +199,7 @@ p {
   cursor: pointer;
 }
 
-.status div{
+.inner__status{
   display: flex;
   width:100%;
   height:100%;
