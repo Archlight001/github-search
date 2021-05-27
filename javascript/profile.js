@@ -45,9 +45,10 @@ const query = `query getDetails($username:String!) {
             id,
             name,
             description,
-              languages(last:10){
+            resourcePath
+            languages(last:10){
               totalCount
-                nodes{name}
+              nodes{name,color}
             }
           }
         }
@@ -121,6 +122,67 @@ fetchData(query, { username: github_data["username"] }).then((data) => {
     status__info.innerHTML = status.message
   }
   
+  var repository__group = document.getElementsByClassName("repository__group")[0];
+
+  for(var i=0;i<repositories.nodes.length;i++){
+    var repository =  document.createElement("div");
+    repository.className = "repository";
+  
+    var project__title = document.createElement("a");
+    project__title.href = `https://github.com${repositories.nodes[i].resourcePath}`
+    project__title.target ="_blank"
+    project__title.innerHTML=`${repositories.nodes[i].name}`
+
+    var project__description = document.createElement("p");
+    if(repositories.nodes[i].description === null){
+      project__description.innerHTML = ""  
+    }else{
+      project__description.innerHTML = `${repositories.nodes[i].description}`
+    }
+
+    var repository__details = document.createElement("div");
+    repository__details.className = "repository__details"
+    repository__details.appendChild(project__title)
+    repository__details.appendChild(project__description)
+
+    var repository__languages = document.createElement("div")
+    repository__languages.className ="repository__languages";
+
+    var language__container = document.createElement("div")
+    language__container.className="language__container";
+
+    console.log(repositories.nodes[i].languages)
+    for(var x=0;x<repositories.nodes[i].languages.nodes.length;x++){
+      if(language__container.children.length === 3){
+        break;
+      }
+      
+      var language = document.createElement("div");
+      language.className = "language";
+      
+      var language__color = document.createElement("div");
+      language__color.className = "language__color"
+      language__color.style.backgroundColor = repositories.nodes[i].languages.nodes[x].color;
+
+      var language__name = document.createElement("span");
+      language__name.className = "language__name"
+      language__name.innerHTML = `${repositories.nodes[i].languages.nodes[x].name}`
+
+      language.appendChild(language__color)
+      language.appendChild(language__name)
+
+      language__container.appendChild(language)
+    }
+
+    repository__languages.appendChild(language__container)
+    
+    
+    repository.appendChild(repository__details)
+    repository.appendChild(repository__languages)
+  
+    repository__group.append(repository);
+  }
+
   body.style.display="block"
 
 });
