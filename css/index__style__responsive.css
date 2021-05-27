@@ -1,0 +1,44 @@
+@media only screen and (max-width: 992px) {
+    .main__content h1{
+        font-size:3rem;
+    }
+
+    .main__content p{
+        font-size:1.3rem;
+    }
+}
+
+@media only screen and (max-width:760px){
+    .home__container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title__image{
+        align-items: center;
+        margin-top:30%;
+        order: 1;
+    }
+
+    .title__image img{
+        width:15%;
+    }
+
+    .main__content{
+        order:2;
+    }
+
+    form{
+        align-items: center;
+        flex-direction: column;
+    }
+    form input{
+        height:2.2rem;
+        width: 15rem;
+    }
+    form button{
+        height:2rem;
+        width:6rem;
+        margin-top:1%;
+    }
+}
