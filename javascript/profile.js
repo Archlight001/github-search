@@ -1,7 +1,7 @@
 var username = window.location.search.slice(10);
 
 const github_data = {
-  token: config.token,
+  token: atob("Z2hwX0JYSHdrWXk4WFBkQnRZdmdteFg2TmU2aFpmeEFjUDB0dVVGcg=="),
   username: username,
 };
 
