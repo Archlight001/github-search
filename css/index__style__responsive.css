@@ -28,9 +28,13 @@
         order:2;
     }
 
+    .main__content p{
+        width:100%;
+    }
     form{
         align-items: center;
         flex-direction: column;
+        margin-top:2.5%
     }
     form input{
         height:2.2rem;
@@ -39,6 +43,6 @@
     form button{
         height:2rem;
         width:6rem;
-        margin-top:1%;
+        margin-top:2.5%;
     }
 }

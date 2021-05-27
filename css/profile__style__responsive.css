@@ -50,12 +50,10 @@
     width: 100%;
     display: block;
     overflow: hidden;
-    height: 40px;
+    height: 1.5rem;
     background-color: #24292e;
     padding: 16px;
-    transition:height 0.5s ease;
   }
-
 
   .nav__mini__header {
     display: flex;
@@ -64,11 +62,11 @@
     align-items: center;
   }
 
-  .nav__mini__body{
-      display: flex;
-      flex-direction:column;
-      margin-top: 3%;
-      width:90%;
+  .nav__mini__body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    width: 90%;
   }
 
   .hamburger__icon {
@@ -99,20 +97,20 @@
     margin-left: 90%;
   }
 
-  .form__search{
-      margin-bottom: 2%;
+  .form__search {
+    margin-bottom: 2%;
   }
-  .nav__links__mini{
-    width:100%;
-    height:30px;
-    margin-left:1.5%;
+  .nav__links__mini {
+    width: 100%;
+    height: 30px;
+    margin-left: 1.5%;
     padding-left: 1%;
     padding-top: 1%;
     padding-bottom: 1%;
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
-    align-items:center;
+    justify-content: flex-start;
+    align-items: center;
     border-style: solid;
     border-width: thin;
     border-color: #586069;
@@ -120,28 +118,28 @@
     border-right-style: hidden;
   }
 
-  .child{
-      border-top-style: hidden;
+  .child {
+    border-top-style: hidden;
   }
 
-  .nav__links__mini a{
+  .nav__links__mini a {
     text-decoration: none;
     font-weight: 600;
     color: #fff;
     font-size: 14px;
     white-space: wrap;
-    width:100%;
+    width: 100%;
     height: 100%;
     margin-top: 2%;
   }
 
-  .nav__links__mini img{
+  .nav__links__mini img {
     width: 3%;
     border-radius: 50%;
     margin-right: 1%;
   }
-  
-  .nav__links__mini a:hover{
+
+  .nav__links__mini a:hover {
     color: #586069;
   }
 
@@ -211,7 +209,7 @@
     cursor: pointer;
   }
 
-  .inner__status{
+  .inner__status {
     display: flex;
     width: 100%;
     height: 100%;
@@ -249,6 +247,7 @@
 
   .follow__icon__container {
     width: 2%;
+    display: block;
     height: 100%;
   }
 

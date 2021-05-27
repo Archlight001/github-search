@@ -32,10 +32,10 @@ function expand__navbar() {
   var nav__mini = document.getElementsByClassName("navbar__mini")[0];
 
   if (expandMiniNavbar === false) {
-    nav__mini.style.height = "550px";
+    nav__mini.style.height = "fit-content";
     expandMiniNavbar = true;
   } else {
-    nav__mini.style.height = "40px";
+    nav__mini.style.height = "1.5rem";
     expandMiniNavbar = false;
   }
 }
